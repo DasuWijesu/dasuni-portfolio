@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dasuni Wijesuriya — Resume</title>
+<style>
+  :root {
+    --background: #0a0a0a;
+    --surface: #111111;
+    --border: #1f1f1f;
+    --accent: #6366f1;
+    --accent-light: #818cf8;
+    --text: #ededed;
+    --muted: #a1a1a1;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  .page {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 48px 40px 80px;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+
+  .title {
+    color: var(--accent-light);
+    font-size: 1.05rem;
+    margin-bottom: 14px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+
+  .contact-row a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .contact-row a:hover {
+    color: var(--accent-light);
+  }
+
+  section {
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-light);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .entry {
+    margin-bottom: 20px;
+  }
+
+  .entry:last-child { margin-bottom: 0; }
+
+  .entry-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 4px;
+  }
+
+  .entry-title {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .entry-sub {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+
+  .entry-date {
+    color: var(--muted);
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .entry ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .entry ul li { margin-bottom: 4px; }
+
+  .entry p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 6px 0 0;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+  }
+
+  .skill-group h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tag {
+    font-size: 0.78rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+
+  .achievements li {
+    list-style: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--text);
+  }
+
+  .achievements { padding: 0; margin: 0; }
+
+  @media print {
+    body { background: white; color: #111; }
+    .page { padding: 20px; }
+    h2 { color: #111; border-bottom-color: #ddd; }
+    .title, .entry-date { color: #444; }
+    .contact-row, .entry-sub, .entry ul, .entry p { color: #444; }
+    .tag, .achievements li { background: #f4f4f4; border-color: #ddd; color: #111; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Dasuni Wijesuriya</h1>
+    <div class="title">IT Undergraduate · Software Engineer · Data &amp; AI</div>
+    <div class="contact-row">
+      <a href="mailto:wijesuriyadasuni@gmail.com">wijesuriyadasuni@gmail.com</a>
+      <a href="https://github.com/DasuWijesu" target="_blank" rel="noreferrer">github.com/DasuWijesu</a>
+      <a href="https://www.linkedin.com/in/dasuni-wijesuriya-843a692a2/" target="_blank" rel="noreferrer">linkedin.com/in/dasuni-wijesuriya-843a692a2</a>
+      <a href="/" target="_blank" rel="noreferrer">Portfolio</a>
+      <a href="/cv.pdf" target="_blank" rel="noreferrer">Download PDF</a>
+      <span>Sri Lanka</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <p style="color:var(--muted); font-size:0.92rem; margin:0;">
+      A curious, detail-oriented IT undergraduate with a dual-degree background spanning software
+      engineering, mathematics, and applied science. Experienced in data systems, business
+      intelligence, and API testing through an enterprise internship, with strong interest and
+      hands-on project work in AI, machine learning, and full-stack development.
+    </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">BSc (Hons) Information Technology — Specialized in IT</div>
+        <div class="entry-date">Expected 2026</div>
+      </div>
+      <div class="entry-sub">Sri Lanka Institute of Information Technology (SLIIT)</div>
+    </div>
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">BSc Physical Science — Mathematics, Applied Science, Computer Science</div>
+        <div class="entry-date">Expected 2026</div>
+      </div>
+      <div class="entry-sub">University of Ruhuna</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">IT Intern — Data &amp; Digital Systems</div>
+        <div class="entry-date">Internship</div>
+      </div>
+      <div class="entry-sub">SriLankan Airlines</div>
+      <ul>
+        <li>Developed Power BI dashboards and automated recurring reports</li>
+        <li>Wrote and optimized SQL queries for data validation and integration</li>
+        <li>Performed API testing using Postman and validated REST API endpoints</li>
+        <li>Collaborated cross-functionally on requirement gathering and technical documentation</li>
+        <li>Supported enterprise data pipelines and business intelligence workflows</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">AI-Powered Learning Analytics Platform</div>
+        <div class="entry-date">Final-Year Research Project</div>
+      </div>
+      <p>AI-driven platform delivering learning analytics, caregiver dashboards, and personalized recommendations using machine learning models. Built with Flutter, Firebase, Python, and Power BI.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">Online Garbage Management System</div>
+      </div>
+      <p>Full-stack MERN application with REST API, CRUD functionality, and Postman-tested endpoints.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">Android Note Application</div>
+      </div>
+      <p>Kotlin-based Android app with Material Design UI, CRUD notes, and local storage.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">Online Teacher Training System</div>
+      </div>
+      <p>PHP and MySQL web system with user authentication, course management, and admin CRUD workflows.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="tag-list">
+          <span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span>
+          <span class="tag">PHP</span><span class="tag">Kotlin</span><span class="tag">SQL</span><span class="tag">R</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <div class="tag-list">
+          <span class="tag">React</span><span class="tag">HTML5</span><span class="tag">CSS3</span>
+          <span class="tag">Tailwind CSS</span><span class="tag">Flutter</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <div class="tag-list">
+          <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">Firebase</span>
+          <span class="tag">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <div class="tag-list">
+          <span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">SQL Server</span><span class="tag">Firebase</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Data &amp; Analytics</h3>
+        <div class="tag-list">
+          <span class="tag">Power BI</span><span class="tag">Data Visualization</span>
+          <span class="tag">Data Modeling</span><span class="tag">ETL Concepts</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Testing</h3>
+        <div class="tag-list">
+          <span class="tag">Postman</span><span class="tag">API Testing</span>
+          <span class="tag">Software Testing</span><span class="tag">Playwright (basic)</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>AI &amp; ML</h3>
+        <div class="tag-list">
+          <span class="tag">Machine Learning</span><span class="tag">Logistic Regression</span>
+          <span class="tag">Neural Networks</span><span class="tag">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <div class="tag-list">
+          <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span>
+          <span class="tag">Android Studio</span><span class="tag">Figma</span><span class="tag">MySQL Workbench</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul style="padding-left:18px; color:var(--muted); font-size:0.9rem; margin:0;">
+      <li>AWS Machine Learning Essentials for Business and Technical Decision Makers</li>
+      <li>AWS Introduction to Generative AI — Art of the Possible</li>
+      <li>Microsoft Learn — Azure Identity, Access and Security</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Achievements</h2>
+    <ul class="achievements">
+      <li>🏆 1st Place — PearlHack 3.0 International Women's Hackathon</li>
+      <li>🥉 2nd Runner-up — Road to Rush Coder 3.0 Hackathon</li>
+    </ul>
+  </section>
+
+</div>
+</body>
+</html>
