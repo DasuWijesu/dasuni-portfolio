@@ -1,7 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 function Navbar() {
   const location = useLocation();
+  const [mobileOpen, setMobileOpen] = useState(false);
+  
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -21,10 +25,11 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex justify-between items-center px-8 py-5 sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="flex justify-between items-center px-6 sm:px-8 py-5 sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <Link to="/" className="text-lg font-semibold tracking-tight">
         Dasuni<span className="text-accent-light">.</span>
       </Link>
+      
       <ul className="hidden md:flex gap-6 items-center">
         {links.map((link) => (
           <li key={link.path}>
@@ -34,6 +39,32 @@ function Navbar() {
           </li>
         ))}
       </ul>
+
+      <button
+        onClick={() => setMobileOpen(!mobileOpen)}
+        className="md:hidden text-muted hover:text-text transition"
+        aria-label="Toggle menu"
+      >
+        {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+
+      {mobileOpen && (
+        <div className="absolute top-full left-0 right-0 bg-surface border-b border-border md:hidden">
+          <ul className="flex flex-col gap-3 px-6 py-4">
+            {links.map((link) => (
+              <li key={link.path}>
+                <Link
+                  to={link.path}
+                  className={getLinkClass(link)}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
